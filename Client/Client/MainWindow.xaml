@@ -1,0 +1,50 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Welcome our beloved client!" Height="790" Width="1350" FontSize="20">
+    <Grid>
+        <StackPanel Background="Aqua">
+            <DockPanel>
+                <TextBlock FontSize="20"  Text="What's the name of the patient you're intrested in?" Margin="10 10 0 0"/>
+                <TextBox Name="name_of_the_patient" Background="Aqua" Margin="10 10 0 0"/>
+            </DockPanel>
+            <Button Name="search" Click="Search_Click" Content="Search" FontSize="20" Margin="190 10 0 0" HorizontalAlignment="Center"  Background="DeepPink"/>
+            <Label Name="result" FontSize="20" FontWeight="Heavy" Margin="0 10" HorizontalAlignment="Center" />
+            <TextBlock Text="Here are the measurments you might be intersted in:" FontWeight="Heavy" Margin="0 30" FontSize="20" HorizontalAlignment="Center"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Options:" Margin="10 0" FontSize="20"/>
+                <RadioButton Content="Whole history of patient's bloodwork" Margin="10 0" Name="all" Click="All_Click"/>
+                <RadioButton Content="Last updated patient's bloodwork" Margin="10" Name="last" Click="Last_Click"/>
+                    <RadioButton Content="Whole history of readings of sphygmomanometer" Margin="10" Name="all_of_sphygmomanometer" Click="All_of_sphygmomanometer_Click"/>
+                    <RadioButton Content="Whole history of readings of cholesterol meter" Margin="10" Name="all_of_cholesterol_meter" Click="All_of_cholesterol_meter_Click"/>
+                    <RadioButton Content="Whole history of readings of glucometer" Margin="10" Name="all_of_glucometer" Click="All_of_glucometer_Click"/>
+                    <RadioButton Content="Whole history of readings of pulse oximeter" Margin="10" Name="all_of_pulse_oximeter" Click="All_of_pulse_oximeter_Click"/>
+                    <RadioButton Content="Last updated reading of sphygmomanometer" Margin="10" Name="last_of_sphygmomanometer" Click="Last_of_sphygmomanometer_Click"/>
+                    <RadioButton Content="Last updated reading of cholesterol meter" Margin="10" Name="last_of_cholesterol_meter" Click="Last_of_cholesterol_meter_Click"/>
+                    <RadioButton Content="Last updated reading of glucometer" Margin="10" Name="last_of_glucometer" Click="Last_of_glucometer_Click"/>
+                    <RadioButton Content="Last updated reading of pulse oximeter" Margin="10" Name="last_of_pulse_oximeter" Click="Last_of_pulse_oximeter_Click"/>
+                    <RadioButton Content="All analog readings" Margin="10" Name="all_analog" Click="All_analog_Click"/>
+                    <RadioButton Content="All digital readings" Margin="10" Name="all_digital" Click="All_digital_Click"/>
+                </StackPanel>
+                <DataGrid Name="data_grid" AutoGenerateColumns="False" Background="Aqua" Grid.Column="1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Blood pressure"/>
+                        <DataGridTextColumn Header="Blood cholesterol"/>
+                        <DataGridTextColumn Header="Blood sugar"/>
+                        <DataGridTextColumn Header="Blood oxygen"/>
+                        <DataGridTextColumn Header="Heart rate"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
