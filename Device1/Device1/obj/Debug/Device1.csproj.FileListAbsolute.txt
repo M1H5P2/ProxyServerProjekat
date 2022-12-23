@@ -1,0 +1,7 @@
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\bin\Debug\Device1.exe.config
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\bin\Debug\Device1.exe
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\bin\Debug\Device1.pdb
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\obj\Debug\Device1.csprojAssemblyReference.cache
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\obj\Debug\Device1.csproj.CoreCompileInputs.cache
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\obj\Debug\Device1.exe
+C:\Users\Milko\Desktop\nestoNovo\Device1\Device1\obj\Debug\Device1.pdb
