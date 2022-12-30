@@ -1,0 +1,7 @@
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\bin\Debug\Proxy_Server.exe.config
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\bin\Debug\Proxy_Server.exe
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\bin\Debug\Proxy_Server.pdb
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\obj\Debug\Proxy_Server.csprojAssemblyReference.cache
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\obj\Debug\Proxy_Server.csproj.CoreCompileInputs.cache
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\obj\Debug\Proxy_Server.exe
+C:\Users\Milko\Desktop\nestoNovo\Proxy_Server\Proxy_Server\obj\Debug\Proxy_Server.pdb
