@@ -59,7 +59,7 @@ namespace Proxy_Server
                     {
                         diastolicBP[i-12] = BitConverter.ToInt32(message, 4 * i);
                         diastolic = diastolicBP.SelectMany(BitConverter.GetBytes).ToArray();
-                        Console.Write(diastolicBP[i] + "  ");
+                        Console.Write(diastolicBP[i-12] + "  ");
                         i++;
                     }
                     Console.WriteLine();
@@ -70,7 +70,7 @@ namespace Proxy_Server
                     {
                         heartRate[i - 24] = BitConverter.ToInt32(message, 4 * i);
                         pulse = heartRate.SelectMany(BitConverter.GetBytes).ToArray();
-                        Console.Write(heartRate[i] + "  ");
+                        Console.Write(heartRate[i-24] + "  ");
                         i++;
                     }
                     Console.WriteLine();
@@ -81,7 +81,7 @@ namespace Proxy_Server
                     {
                         oxygen_saturation[i - 36] = BitConverter.ToInt32(message, 4 * i);
                         oxygen = oxygen_saturation.SelectMany(BitConverter.GetBytes).ToArray();
-                        Console.Write(oxygen_saturation[i] + "  ");
+                        Console.Write(oxygen_saturation[i-36] + "  ");
                         i++;
                     }
                     Console.WriteLine();
@@ -92,7 +92,7 @@ namespace Proxy_Server
                     {
                         total_cholesterol[i - 48] = BitConverter.ToDouble(message, 8 * i - 192);
                         cholesterol = total_cholesterol.SelectMany(BitConverter.GetBytes).ToArray();
-                        Console.Write(total_cholesterol[i] + "  ");
+                        Console.Write(total_cholesterol[i-48] + "  ");
                         i++;
                     }
                     Console.WriteLine();
@@ -103,7 +103,7 @@ namespace Proxy_Server
                     {
                         blood_sugar[i - 60] = BitConverter.ToDouble(message, 8 * i - 192);
                         bsg = blood_sugar.SelectMany(BitConverter.GetBytes).ToArray();
-                        Console.Write(blood_sugar[i] + "  ");
+                        Console.Write(blood_sugar[i-60] + "  ");
                         i++;
                     }
                     Console.WriteLine();
