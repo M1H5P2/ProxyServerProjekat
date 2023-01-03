@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Client"
+        xmlns:local="clr-namespace:Client" d:DataContext="{d:DesignData Type=local:Patient}"
         mc:Ignorable="d"
-        Title="Welcome our beloved client!" Height="790" Width="1350" FontSize="20">
+        Title="Welcome our beloved client!" Height="790" Width="2000" FontSize="20">
     <Grid>
         <StackPanel Background="Aqua">
             <DockPanel>
@@ -35,13 +35,14 @@
                     <RadioButton Content="All analog readings" Margin="10" Name="all_analog" Click="All_analog_Click"/>
                     <RadioButton Content="All digital readings" Margin="10" Name="all_digital" Click="All_digital_Click"/>
                 </StackPanel>
-                <DataGrid Name="data_grid" AutoGenerateColumns="False" Background="Aqua" Grid.Column="1">
+                <DataGrid Name="data_grid" AutoGenerateColumns="False" Background="Aqua" Grid.Column="1" >
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Blood pressure"/>
-                        <DataGridTextColumn Header="Blood cholesterol"/>
-                        <DataGridTextColumn Header="Blood sugar"/>
-                        <DataGridTextColumn Header="Blood oxygen"/>
-                        <DataGridTextColumn Header="Heart rate"/>
+                        <DataGridTextColumn Header="Systolic Blood pressure" Binding="{Binding Path=SystolicBP}"/>
+                        <DataGridTextColumn Header="Diastolic blood preesure" Binding="{Binding Path=DiastolicBP}"/>
+                        <DataGridTextColumn Header="Blood cholesterol" Binding="{Binding Path=Total_cholesterol}"/>
+                        <DataGridTextColumn Header="Blood sugar" Binding="{Binding Path=Blood_sugar}"/>
+                        <DataGridTextColumn Header="Blood oxygen" Binding="{Binding Path=Oxygen_saturation}"/>
+                        <DataGridTextColumn Header="Heart rate" Binding="{Binding Path=Heart_rate}"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
